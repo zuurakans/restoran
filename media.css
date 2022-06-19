@@ -1,5 +1,11 @@
 
 @media screen and (max-width:1024px){
+    container{
+        max-width:970px;
+        padding: 0 20px;
+    }
+}
+/* @media screen and (max-width:1024px){
     .container{
         padding:0 20px;
         max-width: 970px;
@@ -148,7 +154,7 @@ z-index: 1;
         max-width: 200px;
         max-height: 800px;
       }
-}
+} */
 @media screen and (max-width:756px){
     
 .container{
@@ -231,7 +237,7 @@ right:0%;
    display:none;
 }
 .offer{
-    margin-top:270px;
+    margin-top:700px;
 }
 .offer__title{
     font-size: 40px;
@@ -254,6 +260,7 @@ right:0%;
     margin:0;
     text-align: center;
 }
+
 .history__text{
 font-size: 16px;
 line-height: 22px;
@@ -279,16 +286,17 @@ color: #656363;
     margin-top:20px;
 }
 .history_picture{
-    margin-top:500px;
-    position:relative;
-    width:50%;
+    margin-top: 500px;
+    position: relative;
+    max-width: 100%;
+
 }
 .history__image-first{
 position:absolute;
 top:70px;
 left:5px;
 z-index: 1;
-width:125px;
+max-width:125px;
 height:154px;
 }
 
@@ -297,16 +305,16 @@ position:absolute;
 top:20px;
 left:80px;
 z-index: -1;
-width:137px;
+max-width:135px;
 height:221px;
 
 }
 .history__image-third{
 position:absolute;
 top:127px;
-left:165px;
+left: 125px;
 z-index: 1;
-width:137px;
+max-width:137px;
 height:205px;
 
 }
@@ -315,7 +323,7 @@ height:205px;
     top:40px;
     left:218px;
     z-index: -4;
-    width:30px;
+    max-width:30px;
     height:84px;
 
 }
@@ -332,8 +340,7 @@ height:205px;
 
 .menu{
     width:100%;
-    background-size:100% 100%;
-    min-height:130vh;
+    min-height:100vh;
 }
 .menu__title{
     padding-top: 80px;
@@ -345,7 +352,9 @@ height:205px;
     padding-bottom: 106px;
     margin:20px auto;
 }
-
+.feedback{
+    margin-top:0;
+}
 .feedback__wrap{
     width: 100%;
     font-size: 12px;
@@ -353,10 +362,14 @@ height:205px;
 .meals__pizza{
     max-width:100%;
 }
+.meals__item {
+    display:flex;
+    justify-content: center;
+}
 .meals__item span{
     font-size: 22px;
     margin-left:8px;
-    width: 167px;
+    max-width: 167px;
     text-align: center;
     
 }
@@ -380,5 +393,14 @@ height:205px;
 .cook__second{
     margin-bottom:30px;
 }
-
-
+.cook__wrap{
+    flex-direction:column;
+}
+.meals__row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.meals__wrap{
+    margin-top:20px;
+}

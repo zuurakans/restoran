@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    
     direction: 'horizontal',
     loop: true,
     watchOverflow:true,
@@ -34,6 +34,8 @@ const swiper = new Swiper('.swiper', {
 
  }
   });
+
+
 
 
     const burger=document.querySelector('.burger');
