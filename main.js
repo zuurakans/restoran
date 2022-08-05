@@ -36,12 +36,13 @@ const swiper = new Swiper('.swiper', {
   });
 
 
+//Burger menu
 
-
-    const burger=document.querySelector('.burger');
-    const nav=document.querySelector('.header__nav');
+ const burger=document.querySelector('.burger');
+ const nav=document.querySelector('.header__nav');
   
-  burger.addEventListener('click',()=>{
+  burger.addEventListener('click',(e)=>{
+    e.preventDefault();
   nav.classList.toggle('active'); 
   burger.classList.toggle('active');
 });
