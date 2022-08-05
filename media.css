@@ -5,156 +5,7 @@
         padding: 0 20px;
     }
 }
-/* @media screen and (max-width:1024px){
-    .container{
-        padding:0 20px;
-        max-width: 970px;
-    }
-    .header__nav {
-        position: fixed;
-        top:8rem;
-        left:-100%;
-        width:50%;
-        height:73vh;
-        display: flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content: center;
-        background-color:#000;
-        z-index: 2;
-        
-       
-    }
-    .header__nav.active{
-    left:0%;
-    }
-    .nav-links{
-       
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .burger{
-        display: block;
-    }
-    .header__cart{
-        margin: o auto;
-        border-right:none;  
-    }
-    .header__contact-btn{
-        
-        margin: 25px 50px;
-    }
 
-    .hero__title{
-       margin:0 auto;
-       
-    }
-    
-    .benefits__row{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-   .benefits__second{
-       margin-left: 50px;
-   }
-   .benefits__third{
-       margin-top: -60px;
-   }
-    .history{
-        height:100vh;
-        margin-top: -50px;
-    }
-
-    
-.history_picture{
-    position:relative;
-    width:45%;
-}
-.history__image-first{
-position:absolute;
-top:70px;
-left:0;
-z-index: 1;
-
-
-}
-.history__image-second{
-position:absolute;
-top:20px;
-left:80px;
-z-index: -1;
-
-}
-.history__image-third{
-position:absolute;
-top:120px;
-left:130px;
-z-index: 1;
-
-}
-.history__image-fourth{
-    position: absolute;
-    top:40px;
-    left:220px;
-    z-index: -4;
-
-}
-    
-    .history__image-first{
-        width:125px;
-        height:154px;
-    }
-    .history__image-second{
-        width:137px;
-        height:221px;
-    }
-    .history__image-third{
-        width:137px;
-        height:205px;
-    }
-    .history__image-fourth{
-        width:30px;
-        height:84px;
-    }
-    .history__text{
-        font-weight: 700;
-    }
-   .feedback{
-     margin-top:-290px;
- }
-    .meals__row{
-        flex-direction: column;
-        margin-top: 100px;
-        justify-content: center;
-        align-items:center;
-    }
-    .meal-gallery__images::before{
-        display:none;
-    }
-    .meal-gallery__images::after{
-        display: none;
-    }
-    .meals__pizza{
-        margin-bottom: 100px;
-    }
-    .meal-gallery__images:last-child{
-        text-align: center;
-    }
-    .cook__wrap{
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    }
-    .cook-third{
-        margin-top: 30px;
-    }
-   
-   
-    .swiper-wrapper {
-        max-width: 200px;
-        max-height: 800px;
-      }
-} */
 @media screen and (max-width:756px){
     
 .container{
@@ -177,34 +28,40 @@ z-index: 1;
     position: fixed;
     top:8rem;
     left:-100%;
-    width:90%;
-    height:70vh;
+    width:100%;
+    height:50vh;
     display: flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
     background-color:#000;
+    transition: 0.3s;
     z-index: 2;
-    
-   
 }
 .header__nav.active{
-right:0%;
+left:0;
 }
 .nav-links{
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .burger{
     display: block;
+} 
+
+.burger.active .bar:nth-child(2){
+opacity:0;
+}
+.burger.active .bar:nth-child(1){
+transform:translateY(8px) rotate(45deg);
+}
+.burger.active .bar:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
 }
 .header__cart{
     margin: o auto;
-    border-right:none;
-    
-    
+    border-right:none;   
 }
 .header__contact-btn{
     
@@ -275,6 +132,7 @@ color: #656363;
 }
 .benefits__item{
     width:100%;
+    margin-top: 80px;
     margin-bottom:15px;
 }
 
@@ -286,7 +144,7 @@ color: #656363;
     margin-top:20px;
 }
 .history_picture{
-    margin-top: 500px;
+    margin-top: 400px;
     position: relative;
     max-width: 100%;
 
@@ -328,15 +186,23 @@ height:205px;
 
 }
 
-.swiper-button-prev {
-    display:none;
-    margin-left:-30px;
-}
-.swiper-button-next{
-    display: none;
-    margin-right: -10px;
+div.swiper-button-prev,
+div.swiper-button-next {
+    position:absloute;
+    top:40%;
+    
     
 }
+div.swiper-button-prev{
+    margin-left:-30px;
+}
+div.swiper-button-next{
+    position:absloute;
+    top:40%;
+    margin-right: -20px;
+    
+}
+
 
 .menu{
     width:100%;
@@ -403,4 +269,13 @@ height:205px;
 }
 .meals__wrap{
     margin-top:20px;
+}
+}
+@media screen and (max-width:370px){
+    .history__picture{
+        margin-top: 500px;
+    }
+    .offer{
+        margin-top: 900px;
+    }
 }
