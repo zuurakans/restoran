@@ -29,7 +29,7 @@
     top:8rem;
     left:-100%;
     width:100%;
-    height:50vh;
+    /* height:50vh; */
     display: flex;
     flex-direction:column;
     align-items:center;
