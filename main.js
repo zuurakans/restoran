@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    
     direction: 'horizontal',
     loop: true,
     watchOverflow:true,
@@ -36,10 +36,13 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-    const burger=document.querySelector('.burger');
-    const nav=document.querySelector('.header__nav');
+//Burger menu
+
+ const burger=document.querySelector('.burger');
+ const nav=document.querySelector('.header__nav');
   
-  burger.addEventListener('click',()=>{
+  burger.addEventListener('click',(e)=>{
+    e.preventDefault();
   nav.classList.toggle('active'); 
   burger.classList.toggle('active');
 });
